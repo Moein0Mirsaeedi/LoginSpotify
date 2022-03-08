@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+$colorBg: #0d0e10;
+$color1: #169632;
+$color2: #2a2c31;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Site {
+  background-color: $colorBg;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+
+  .Form {
+    max-width: 400px;
+    width: 100%;
+    padding: 50px 25px;
+    background-image: linear-gradient(45deg, #fff1, #fff3);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 2px outset #fff5;
+    position: relative;
+    box-shadow: 0 2px 6px #0002, 0 5px 16px #0005;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      text-align: center;
+
+      .h1 {
+        color: white;
+        font-size: 40px;
+      }
+
+      .h1::selection {
+        color: black;
+        background-color: white;
+      }
+      > span:nth-child(4) {
+        color: white;
+        font-weight: 300;
+        > a {
+          color: $color1;
+          text-decoration: none;
+          font-weight: 500;
+        }
+        > a::selection {
+          color: black;
+          background-color: $color1;
+        }
+      }
+      > span::selection {
+        color: black;
+        background-color: white;
+      }
+
+      .group {
+        position: relative;
+        margin-top: 30px;
+
+        input {
+          background-color: #0002;
+          border-radius: 4px;
+          padding: 6px 25px 6px 10px;
+          display: block;
+          width: 100%;
+          height: 35px;
+          box-shadow: -1px 1px 2px #0002 inset;
+          color: #fff;
+          font-size: 16px;
+          border: 1px outset #fff5;
+          transition: border-radius 0.3s;
+        }
+
+        input:focus ~ label,
+        input:valid ~ label {
+          transform: translateY(-37px);
+        }
+
+        label {
+          position: absolute;
+          pointer-events: none;
+          top: 50%;
+          left: 10px;
+          transform: translateY(-50%);
+          font-size: 14px;
+          color: #fffa;
+          transition-property: top, right, color, font-size;
+          transition: 0.3s;
+        }
+      }
+      .t1 {
+        margin-top: 50px;
+      }
+
+      .Forgot {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        > a {
+          margin-top: 20px;
+          color: white;
+          text-decoration: none;
+        }
+        > a::selection {
+          color: black;
+          background-color: white;
+        }
+      }
+
+      .btn {
+        background-color: $color1;
+        border: none;
+        color: #fff;
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}

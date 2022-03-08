@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+.Site { background-color: #0d0e10; width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center; font-family: "Roboto", sans-serif; }
+
+.Site .Form { max-width: 400px; width: 100%; padding: 50px 25px; background-image: linear-gradient(45deg, #fff1, #fff3); backdrop-filter: blur(10px); border-radius: 12px; border: 2px outset #fff5; position: relative; box-shadow: 0 2px 6px #0002, 0 5px 16px #0005; display: flex; align-items: center; justify-content: center; }
+
+.Site .Form form { text-align: center; }
+
+.Site .Form form .h1 { color: white; font-size: 40px; }
+
+.Site .Form form .h1::selection { color: black; background-color: white; }
+
+.Site .Form form > span:nth-child(4) { color: white; font-weight: 300; }
+
+.Site .Form form > span:nth-child(4) > a { color: #169632; text-decoration: none; font-weight: 500; }
+
+.Site .Form form > span:nth-child(4) > a::selection { color: black; background-color: #169632; }
+
+.Site .Form form > span::selection { color: black; background-color: white; }
+
+.Site .Form form .group { position: relative; margin-top: 30px; }
+
+.Site .Form form .group input { background-color: #0002; border-radius: 4px; padding: 6px 25px 6px 10px; display: block; width: 100%; height: 35px; box-shadow: -1px 1px 2px #0002 inset; color: #fff; font-size: 16px; border: 1px outset #fff5; transition: border-radius 0.3s; }
+
+.Site .Form form .group input:focus ~ label, .Site .Form form .group input:valid ~ label { transform: translateY(-37px); }
+
+.Site .Form form .group label { position: absolute; pointer-events: none; top: 50%; left: 10px; transform: translateY(-50%); font-size: 14px; color: #fffa; transition-property: top, right, color, font-size; transition: 0.3s; }
+
+.Site .Form form .t1 { margin-top: 50px; }
+
+.Site .Form form .Forgot { width: 100%; display: flex; justify-content: end; }
+
+.Site .Form form .Forgot > a { margin-top: 20px; color: white; text-decoration: none; }
+
+.Site .Form form .Forgot > a::selection { color: black; background-color: white; }
+
+.Site .Form form .btn { background-color: #169632; border: none; color: #fff; width: 100%; height: 40px; margin-top: 20px; font-size: 18px; }
+/*# sourceMappingURL=main.css.map */
