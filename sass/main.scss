@@ -32,6 +32,7 @@ $color2: #2a2c31;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     form {
       text-align: center;
@@ -116,15 +117,19 @@ $color2: #2a2c31;
           background-color: white;
         }
       }
-
-      .btn {
-        background-color: $color1;
-        border: none;
-        color: #fff;
-        width: 100%;
-        height: 40px;
-        margin-top: 20px;
-        font-size: 18px;
+    }
+    .btn {
+      background-color: $color1;
+      border: none;
+      color: #fff;
+      width: 100%;
+      height: 40px;
+      margin-top: 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 300ms;
+      &:hover {
+        background-color: #2da146;
       }
     }
   }
