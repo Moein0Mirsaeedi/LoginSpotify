@@ -1,13 +1,12 @@
-let user1 = {
-  userName: "moein",
-  password: "moeing",
-  email: "moein.mirsaeedi@gmail.com",
-};
-
-let user2 = {
-  userName: "reza",
-  password: "rezag",
-  email: "reza.programmer@gmail.com",
+let users = {
+  moein: {
+    userName: "moein",
+    password: "moein229",
+  },
+  reza: {
+    userName: "reza",
+    password: "reza228",
+  },
 };
 
 let btn = document.querySelector("#btn");
@@ -16,7 +15,17 @@ let input2 = document.getElementById("password");
 let test = document.getElementById("test");
 
 btn.onclick = function () {
-  if (input1 == user1.userName && input2 == user1.password) {
-    console.log("Hello");
+  if (
+    input1.value == users.moein.userName &&
+    input2.value == users.moein.password
+  ) {
+    window.location.href = "index1.html";
+  } else if (
+    input1.value == users.reza.userName &&
+    input2.value == users.reza.password
+  ) {
+    window.location.href = "index1.html";
+  } else {
+    window.alert("Eror");
   }
 };
