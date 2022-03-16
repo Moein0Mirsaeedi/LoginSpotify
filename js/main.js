@@ -12,7 +12,6 @@ let users = {
 let btn = document.querySelector("#btn");
 let input1 = document.getElementById("text");
 let input2 = document.getElementById("password");
-let test = document.getElementById("test");
 
 btn.onclick = function () {
   if (
